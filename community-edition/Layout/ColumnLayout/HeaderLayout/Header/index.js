@@ -148,8 +148,8 @@ export default class InovuaDataGridHeader extends React.Component {
         };
     }
     componentWillUnmount() {
-        this.cells = null;
-        this.unlockedCells = null;
+        this.cells = [];
+        this.unlockedCells = [];
     }
     componentDidUpdate = (prevProps) => {
         if (this.props.columnRenderCount < prevProps.columnRenderCount) {
